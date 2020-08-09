@@ -30,7 +30,7 @@ describe("Calculator", function() {
 
 // What Can I Drink Spec
 
-
+/*
 describe("My whatCanIDrink function", function() {
     beforeEach(function() {
         drink = new whatCanIDrink();
@@ -77,4 +77,41 @@ describe("My whatCanIDrink function", function() {
             expect(result).not.toEqual(-1);
         });
     });
+});
+
+*/
+
+//FizzBuzz spec
+
+describe("My fizzBuzz function", function() {
+  
+  beforeEach(function() {
+    fizzbuzz = new fizzBuzz();
+  });
+
+  describe("returns number, fizz, buzz or fizzbuzz", function() {
+    it("should exist", function() {
+      expect(fizzBuzz).toBeDefined();
+    });
+
+    it("should return Fizz when called as fizzBuzz(9)", function() {
+      var result = fizzBuzz(9)
+      expect(result).toBe("Fizz");
+    });
+
+    it("should return Buzz when called as fizzBuzz(20)", function(){
+      var result = fizzBuzz(20)
+      expect(result).toBe("Buzz"); 
+    });
+
+    it("should return FizzBuzz when called as fizzBuzz(90)", function() {
+      var result = fizzBuzz(90)
+      expect(result).toBe("FizzBuzz");
+    });
+
+    it("should return 2 when called as fizzBuzz(2)", function() {
+      var result = fizzBuzz(2)
+      expect(result).toBe(2)
+    });
+  });
 });
